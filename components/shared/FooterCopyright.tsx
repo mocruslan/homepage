@@ -6,7 +6,7 @@ export default function FooterCopyright() {
             <div className="text-lg text-ternary-dark dark:text-ternary-light">
                 &copy; {new Date().getFullYear()}
                 <a
-                    href="https://github.com/realstoman/nextjs-tailwindcss-portfolio"
+                    href="https://github.com/mocruslan/homepage"
                     target="__blank"
                     className="ml-1 duration-500 hover:text-indigo-600 hover:underline dark:hover:text-indigo-300"
                 >
@@ -18,7 +18,7 @@ export default function FooterCopyright() {
                     target="__blank"
                     className="ml-1 font-medium uppercase duration-500 text-secondary-dark hover:text-indigo-600 hover:underline dark:text-secondary-light dark:hover:text-indigo-300"
                 >
-                    Stoman
+                    Ruslan
                 </a>
             </div>
         </div>
