@@ -5,7 +5,7 @@ import useThemeSwitcher from '../../hooks/useThemeSwitcher';
 import React from "react";
 import Image from "next/image";
 
-export default function HomeBanner() {
+export default function HomeBanner(): React.JSX.Element {
     const [activeTheme] = useThemeSwitcher();
 
     return (

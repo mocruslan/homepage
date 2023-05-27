@@ -10,7 +10,7 @@ import logoDark from '../../public/images/logo-dark.svg';
 import Image from "next/image";
 
 
-export default function Header() {
+export default function Header(): React.JSX.Element {
     const [showMenu, setShowMenu] = useState<boolean>(false);
     const [showModal, setShowModal] = useState<boolean>(false);
     const [activeTheme, setTheme] = useThemeSwitcher();

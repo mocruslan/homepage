@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function FooterCopyright() {
+export default function FooterCopyright(): React.JSX.Element {
     return (
         <div className="flex items-center justify-center text-center font-general-regular">
             <div className="text-lg text-ternary-dark dark:text-ternary-light">

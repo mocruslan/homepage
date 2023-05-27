@@ -1,10 +1,10 @@
 "use client"
 
-import {useRef} from 'react';
+import React, {useRef} from 'react';
 import {clientsData, clientsHeading} from '../../data/clientsData';
 import AboutClientSingle from './AboutClientSingle';
 
-function AboutClients() {
+export default function AboutClients(): React.JSX.Element{
     const clients = useRef(clientsData);
     return (
         <div className="mt-10 sm:mt-20">
@@ -23,5 +23,3 @@ function AboutClients() {
         </div>
     );
 }
-
-export default AboutClients;

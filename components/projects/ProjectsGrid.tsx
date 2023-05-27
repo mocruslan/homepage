@@ -11,7 +11,7 @@ interface Project {
     category: string;
 }
 
-export default function ProjectsGrid() {
+export default function ProjectsGrid(): React.JSX.Element {
     const [, setSearchProject] = useState<string>();
     const [selectProject, setSelectProject] = useState<string>();
 

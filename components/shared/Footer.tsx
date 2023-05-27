@@ -2,7 +2,7 @@ import FooterCopyright from './FooterCopyright';
 import React from "react";
 import {socialLinks} from "../../data/footerData";
 
-export default function Footer() {
+export default function Footer(): React.JSX.Element {
     return (
         <div className="container mx-auto">
             <div className={"pt-20 sm:pt-30 pb-8 mt-20 border-t-2 border-primary-light dark:border-secondary-dark"}>

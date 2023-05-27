@@ -4,7 +4,7 @@ import React from "react";
 import Button from "../components/shared/Button";
 import ProjectsGrid from "../components/projects/ProjectsGrid";
 
-export default function Home() {
+export default function Home(): React.JSX.Element {
     return (
         <main>
             <div className={"container mx-auto"}>

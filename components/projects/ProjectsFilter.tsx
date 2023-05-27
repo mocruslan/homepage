@@ -14,7 +14,7 @@ interface ProjectsFilterProps {
 const ProjectsFilter: React.FC<ProjectsFilterProps> = ({setSelectProject}) => {
     return (
         <select
-            onChange={(e) => {
+            onChange={(e: React.ChangeEvent<HTMLSelectElement>) => {
                 setSelectProject(e.target.value);
             }}
             className="
