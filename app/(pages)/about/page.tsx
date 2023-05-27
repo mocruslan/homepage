@@ -1,5 +1,5 @@
-import AboutMeBio from "../../components/about/AboutMeBio";
-import AboutClients from "../../components/about/AboutClients";
+import AboutMeBio from "./(components)/AboutMeBio";
+import AboutClients from "./(components)/AboutClients";
 
 export default function About() {
     return (

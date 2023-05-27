@@ -1,6 +1,6 @@
 import React from "react";
 
-const selectOptions = [
+const selectOptions: string[] = [
     'Web Application',
     'Mobile Application',
     'UI/UX Design',

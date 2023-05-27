@@ -3,9 +3,9 @@ import {Inter} from 'next/font/google'
 import {NextFont} from "next/dist/compiled/@next/font";
 import {Metadata} from "next";
 import React from "react";
-import UseScrollToTop from "../hooks/useScrollToTop";
-import Header from "../components/shared/Header";
-import Footer from "../components/shared/Footer";
+import UseScrollToTop from "./hooks/useScrollToTop";
+import Header from "./components/shared/Header";
+import Footer from "./components/shared/Footer";
 
 const inter: NextFont = Inter({subsets: ['latin']})
 

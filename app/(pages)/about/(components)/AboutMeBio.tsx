@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import React, {useRef} from 'react';
-import {aboutMeData} from '../../data/aboutMeData';
+import {aboutMeData} from '../../../data/aboutMeData';
 
 export default function AboutMeBio(): React.JSX.Element {
     const aboutMe = useRef(aboutMeData);
