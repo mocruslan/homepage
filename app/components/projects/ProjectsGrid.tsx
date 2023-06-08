@@ -2,20 +2,15 @@
 
 import React, {useState} from 'react';
 import {FiSearch} from 'react-icons/fi';
-import ProjectSingle from './ProjectSingle';
-import {projectsData} from '../../data/projectsData';
+import ProjectEntry from './ProjectEntry';
+import {Project, projectsData} from '../../data/projectsData';
 import ProjectsFilter from './ProjectsFilter';
-
-interface Project {
-    title: string;
-    category: string;
-}
 
 export default function ProjectsGrid(): React.JSX.Element {
     const [, setSearchProject] = useState<string>();
     const [selectProject, setSelectProject] = useState<string>();
 
-    const selectProjectsByCategory = projectsData.filter((item: Project) => {
+    const selectProjectsByCategory: Project[] = projectsData.filter((item: Project) => {
         let category: string = item.category.charAt(0).toUpperCase() + item.category.slice(1);
         return category.includes(selectProject || '');
     });
@@ -61,7 +56,7 @@ export default function ProjectsGrid(): React.JSX.Element {
                                 sm:px-4
                                 py-2
                                 border
-                            border-gray-200
+                                border-gray-200
                                 dark:border-secondary-dark
                                 rounded-lg
                                 text-sm
@@ -85,13 +80,15 @@ export default function ProjectsGrid(): React.JSX.Element {
             </div>
 
             <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 sm:gap-5 lg:grid-cols-3">
-                {selectProject
-                    ? selectProjectsByCategory.map((project, index) => {
-                        return <ProjectSingle key={index} {...project} />;
-                    })
-                    : projectsData.map((project, index) => (
-                        <ProjectSingle key={index} {...project} />
-                    ))}
+                {
+                    selectProject
+                        ? selectProjectsByCategory.map((project: Project, index: number) => {
+                            return <ProjectEntry key={index} project={project}/>;
+                        })
+                        : projectsData.map((project: Project, index: number) => (
+                            <ProjectEntry key={index} project={project}/>
+                        ))
+                }
             </div>
         </section>
     );

@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import {relatedProjectsData} from "../../data/relatedProjectsData";
 import React from "react";
+import {Project} from "../../data/projectsData";
 
 export default function RelatedProjects(): React.JSX.Element {
 	return (
@@ -10,7 +11,7 @@ export default function RelatedProjects(): React.JSX.Element {
 			</p>
 
 			<div className={"grid grid-cols-1 sm:grid-cols-4 gap-10"}>
-				{relatedProjectsData.Projects.map((project) => {
+				{relatedProjectsData.Projects.map((project: Project) => {
 					return (
 						<Image
 							src={project.img}
