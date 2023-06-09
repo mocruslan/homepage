@@ -5,7 +5,7 @@ import {clientsData, clientsHeading} from '../../../data/clientsData';
 import AboutClientSingle from './AboutClientSingle';
 
 export default function AboutClients(): React.JSX.Element{
-    const clients = useRef(clientsData);
+    const clientsDataRef = useRef(clientsData);
 
     return (
         <div className="mt-10 sm:mt-20">
@@ -13,7 +13,7 @@ export default function AboutClients(): React.JSX.Element{
                 {clientsHeading}
             </p>
             <div className="grid grid-cols-2 sm:grid-cols-4 mt-10 sm:mt-14 gap-2">
-                {clients.current.map((client) => (
+                {clientsDataRef.current.map((client) => (
                     <AboutClientSingle
                         title={client.title}
                         image={client.img}

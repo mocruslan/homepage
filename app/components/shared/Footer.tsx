@@ -1,8 +1,12 @@
+"use client"
+
 import FooterCopyright from './FooterCopyright';
-import React from "react";
+import React, {useRef} from "react";
 import {socialLinks} from "../../data/footerData";
 
 export default function Footer(): React.JSX.Element {
+    const linksRef = useRef(socialLinks);
+
     return (
         <div className="container mx-auto">
             <div className={"pt-20 sm:pt-30 pb-8 mt-20 border-t-2 border-primary-light dark:border-secondary-dark"}>
@@ -12,7 +16,7 @@ export default function Footer(): React.JSX.Element {
                         Follow me
                     </p>
                     <ul className="flex gap-4 sm:gap-8">
-                        {socialLinks.map((link) => (
+                        {linksRef.current.map((link) => (
                             <a
                                 href={link.url}
                                 target="__blank"
