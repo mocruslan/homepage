@@ -7,15 +7,7 @@ import {Project} from "../../data/projectsData";
 
 export default function ProjectEntry(props: { project: Project }): React.JSX.Element {
     return (
-        <div
-            // initial={{ opacity: 0 }}
-            // animate={{ opacity: 1}}
-            // transition={{
-            // 	ease: 'easeInOut',
-            // 	duration: 0.7,
-            // 	delay: 0.15,
-            // }}
-        >
+        <div>
             <Link
                 href={`/projects/${props.project.url}`}
             >

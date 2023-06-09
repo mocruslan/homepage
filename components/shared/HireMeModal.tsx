@@ -16,12 +16,7 @@ interface HireMeModalProps {
 
 const HireMeModal: React.FC<HireMeModalProps> = ({onClose, onRequest}) => {
     return (
-        <div
-            // initial={{opacity: 0}}
-            // animate={{opacity: 1}}
-            // exit={{opacity: 0}}
-            className="fixed inset-0 z-30 transition-all duration-500 font-general-medium"
-        >
+        <div className="fixed inset-0 z-30 transition-all duration-500 font-general-medium">
             {/* Modal Backdrop */}
             <div className="fixed inset-0 z-20 h-full w-full bg-black bg-opacity-50 bg-filter"></div>
 
