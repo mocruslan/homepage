@@ -1,8 +1,8 @@
 import HomeBanner from "./HomeBanner";
 import Link from "next/link";
 import React from "react";
-import Button from "./components/shared/Button";
-import ProjectsGrid from "./components/projects/ProjectsGrid";
+import Button from "../components/shared/Button";
+import ProjectsGrid from "../components/projects/ProjectsGrid";
 
 export default function Home(): React.JSX.Element {
     return (
