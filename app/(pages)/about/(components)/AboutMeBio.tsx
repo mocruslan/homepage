@@ -5,7 +5,7 @@ import React, {useRef} from 'react';
 import {aboutMeData} from '../../../data/aboutMeData';
 
 export default function AboutMeBio(): React.JSX.Element {
-    const aboutMe = useRef(aboutMeData);
+    const aboutMeDataRef = useRef(aboutMeData);
 
     return (
         <div className="block sm:flex sm:gap-10 mt-10 sm:mt-20">
@@ -20,7 +20,7 @@ export default function AboutMeBio(): React.JSX.Element {
             </div>
 
             <div className="font-general-regular w-full sm:w-3/4 text-left">
-                {aboutMe.current.map((bio) => (
+                {aboutMeDataRef.current.map((bio) => (
                     <p
                         className="mb-4 text-ternary-dark dark:text-ternary-light text-lg"
                         key={bio.id}
