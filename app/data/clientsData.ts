@@ -1,12 +1,4 @@
 import {v4 as uuidv4} from 'uuid';
-import AmazonImage from '/images/brands/amazon_gray.png';
-import SonyImage from '/images/brands/sony_gray.png';
-import AdidasImage from '/images/brands/adidas_gray.png';
-import FilaImage from '/images/brands/fila_gray.png';
-import NBImage from '/images/brands/nb_gray.png';
-import SamsungImage from '/images/brands/samsung_gray.png';
-import CanonImage from '/images/brands/canon_gray.png';
-import PumaImage from '/images/brands/puma_gray.png';
 
 const clientsHeading: string = 'Some of the brands I worked with';
 
@@ -14,42 +6,42 @@ const clientsData = [
     {
         id: uuidv4(),
         title: 'Amazon',
-        img: AmazonImage,
+        img: '/images/brands/amazon_gray.png',
     },
     {
         id: uuidv4(),
         title: 'Sony',
-        img: SonyImage,
+        img: '/images/brands/sony_gray.png',
     },
     {
         id: uuidv4(),
         title: 'Adidas',
-        img: AdidasImage,
+        img: '/images/brands/adidas_gray.png',
     },
     {
         id: uuidv4(),
         title: 'FILA',
-        img: FilaImage,
+        img: '/images/brands/fila_gray.png',
     },
     {
         id: uuidv4(),
         title: 'NB',
-        img: NBImage,
+        img: '/images/brands/nb_gray.png',
     },
     {
         id: uuidv4(),
         title: 'SAMSUNG',
-        img: SamsungImage,
+        img: '/images/brands/samsung_gray.png',
     },
     {
         id: uuidv4(),
         title: 'CANON',
-        img: CanonImage,
+        img: '/images/brands/canon_gray.png',
     },
     {
         id: uuidv4(),
         title: 'PUMA',
-        img: PumaImage,
+        img: '/images/brands/puma_gray.png',
     },
 ];
 

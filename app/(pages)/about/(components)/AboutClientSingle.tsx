@@ -2,8 +2,8 @@ import Image, {StaticImageData} from 'next/image';
 import React from "react";
 
 interface AboutClientSingleProps {
-  title: string;
-  image: StaticImageData;
+    title: string;
+    image: StaticImageData;
 }
 
 const AboutClientSingle: React.FC<AboutClientSingleProps> = ({ title, image }) => {
