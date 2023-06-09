@@ -3,7 +3,7 @@ import React from "react";
 
 interface AboutClientSingleProps {
     title: string;
-    image: StaticImageData;
+    image: string;
 }
 
 const AboutClientSingle: React.FC<AboutClientSingleProps> = ({ title, image }) => {
