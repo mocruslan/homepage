@@ -2,10 +2,10 @@
 
 import FooterCopyright from './FooterCopyright';
 import React, {useRef} from "react";
-import {socialLinks} from "../../data/footerData";
+import {arrSocialLink} from "./data/footerData";
 
 export default function Footer(): React.JSX.Element {
-    const linksRef = useRef(socialLinks);
+    const linksRef = useRef(arrSocialLink);
 
     return (
         <div className="container mx-auto">

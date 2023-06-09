@@ -3,7 +3,7 @@
 import React from "react";
 import Link from 'next/link';
 import Image from 'next/image';
-import {Project} from "@/data/projectsData";
+import {Project} from "@/components/projects/data/projectData";
 
 export default function ProjectEntry(props: { project: Project }): React.JSX.Element {
     return (

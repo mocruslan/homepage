@@ -1,5 +1,5 @@
 import React from "react";
-import {ProjectInfo} from "@/data/projectsData";
+import {ProjectInfo} from "@/components/projects/data/projectData";
 
 export default function Objective(props: { projectInfo: ProjectInfo }): React.JSX.Element {
     return (

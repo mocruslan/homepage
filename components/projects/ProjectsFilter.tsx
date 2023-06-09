@@ -1,21 +1,19 @@
-import React from "react";
+"use client"
 
-const selectOptions: string[] = [
-    'Web Application',
-    'Mobile Application',
-    'UI/UX Design',
-    'Branding',
-];
+import React, {useRef} from "react";
+import {arrBrandingOptionData} from "@/components/projects/data/brandingData";
 
 interface ProjectsFilterProps {
     setSelectProject: (value: string) => void;
 }
 
-const ProjectsFilter: React.FC<ProjectsFilterProps> = ({setSelectProject}) => {
+export default function ProjectsFilterProps(props: ProjectsFilterProps): React.JSX.Element {
+    const brandingOptionDataRef = useRef(arrBrandingOptionData);
+
     return (
         <select
             onChange={(e: React.ChangeEvent<HTMLSelectElement>) => {
-                setSelectProject(e.target.value);
+                props.setSelectProject(e.target.value);
             }}
             className="
                 px-4
@@ -37,7 +35,7 @@ const ProjectsFilter: React.FC<ProjectsFilterProps> = ({setSelectProject}) => {
                 All Projects
             </option>
 
-            {selectOptions.map((option) => (
+            {brandingOptionDataRef.current.map((option: string) => (
                 <option className={"text-normal sm:text-md"} key={option}>
                     {option}
                 </option>
@@ -45,5 +43,3 @@ const ProjectsFilter: React.FC<ProjectsFilterProps> = ({setSelectProject}) => {
         </select>
     );
 }
-
-export default ProjectsFilter;

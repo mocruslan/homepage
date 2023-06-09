@@ -5,7 +5,7 @@ import Header from "./(components)/Header";
 import Gallery from "./(components)/Gallery";
 import Info from "./(components)/Info";
 import RelatedProjects from "@/components/projects/RelatedProjects";
-import {filterProjectsByURL, Project} from '@/data/projectsData';
+import {filterProjectsByURL, Project} from '@/components/projects/data/projectData';
 
 export default function Project({params}): React.JSX.Element {
     const projectRef: React.MutableRefObject<Project> = useRef(filterProjectsByURL(params.id));

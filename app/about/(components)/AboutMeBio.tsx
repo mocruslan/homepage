@@ -2,7 +2,7 @@
 
 import React, {useRef} from 'react';
 import Image from 'next/image';
-import {aboutMeData} from '@/data/aboutMeData';
+import {aboutMeData} from '../(data)/aboutMeData';
 
 export default function AboutMeBio(): React.JSX.Element {
     const aboutMeDataRef = useRef(aboutMeData);
@@ -11,7 +11,7 @@ export default function AboutMeBio(): React.JSX.Element {
         <div className="block sm:flex sm:gap-10 mt-10 sm:mt-20">
             <div className="w-full sm:w-1/4 mb-7 sm:mb-0">
                 <Image
-                    src="/images/profile.jpeg"
+                    src="/images/profile.png"
                     width={200}
                     height={200}
                     className="rounded-lg"
