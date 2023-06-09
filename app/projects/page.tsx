@@ -1,5 +1,5 @@
-import ProjectsGrid from "../../components/projects/ProjectsGrid";
 import React from "react";
+import ProjectsGrid from "@/components/projects/ProjectsGrid";
 
 export default function Projects(): React.JSX.Element {
     return (

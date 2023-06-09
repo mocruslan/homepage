@@ -1,6 +1,6 @@
-import {ProjectImage} from "../../../../data/projectsData";
-import Image from "next/image";
 import React from "react";
+import Image from "next/image";
+import {ProjectImage} from "@/data/projectsData";
 
 export default function Gallery(props: { arrProjectImage: ProjectImage[] }): React.JSX.Element {
     return (

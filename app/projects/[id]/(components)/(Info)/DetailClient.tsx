@@ -1,5 +1,5 @@
-import {CompanyInfo, ProjectInfo} from "../../../../../data/projectsData";
 import React from "react";
+import {CompanyInfo, ProjectInfo} from "@/data/projectsData";
 
 export default function DetailClient(props: { projectInfo: ProjectInfo }): React.JSX.Element {
     return (

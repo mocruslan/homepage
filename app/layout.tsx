@@ -1,11 +1,11 @@
 import './globals.css'
-import {Inter} from 'next/font/google'
+import React from "react";
 import {NextFont} from "next/dist/compiled/@next/font";
 import {Metadata} from "next";
-import React from "react";
-import UseScrollToTop from "../hooks/useScrollToTop";
-import Header from "../components/shared/Header";
-import Footer from "../components/shared/Footer";
+import {Inter} from 'next/font/google'
+import Header from "@/components/shared/Header";
+import Footer from "@/components/shared/Footer";
+import UseScrollToTop from "@/hooks/useScrollToTop";
 
 const inter: NextFont = Inter({subsets: ['latin']})
 

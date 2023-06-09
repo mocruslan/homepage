@@ -1,9 +1,9 @@
 "use client"
 
-import Image from 'next/image';
-import Link from 'next/link';
 import React from "react";
-import {Project} from "../../data/projectsData";
+import Link from 'next/link';
+import Image from 'next/image';
+import {Project} from "@/data/projectsData";
 
 export default function ProjectEntry(props: { project: Project }): React.JSX.Element {
     return (

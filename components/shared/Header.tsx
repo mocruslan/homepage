@@ -106,19 +106,19 @@ export default function Header(): React.JSX.Element {
                 >
                     <div
                         className="mb-2 block text-left text-lg text-primary-dark hover:text-secondary-dark dark:text-ternary-light sm:mx-4 sm:py-2 dark:hover:text-secondary-light">
-                        <Link href="/projects" aria-label="Projects">
+                        <Link href={"/projects"} aria-label={"Projects"}>
                             Projects
                         </Link>
                     </div>
                     <div
                         className="mb-2 block border-t-2 pt-3 text-left text-lg text-primary-dark border-primary-light hover:text-secondary-dark dark:text-ternary-light dark:border-secondary-dark sm:mx-4 sm:border-t-0 sm:py-2 sm:pt-2 dark:hover:text-secondary-light">
-                        <Link href="/about" aria-label="About Me">
+                        <Link href={"/about"} aria-label={"About Me"}>
                             About Me
                         </Link>
                     </div>
                     <div
                         className="mb-2 block border-t-2 pt-3 text-left text-lg text-primary-dark border-primary-light hover:text-secondary-dark dark:text-ternary-light dark:border-secondary-dark sm:mx-4 sm:border-t-0 sm:py-2 sm:pt-2 dark:hover:text-secondary-light">
-                        <Link href="/contact" aria-label="Contact">
+                        <Link href={"/contact"} aria-label={"Contact"}>
                             Contact
                         </Link>
                     </div>
@@ -140,17 +140,17 @@ export default function Header(): React.JSX.Element {
                     <div
                         className="mb-2 block text-left text-lg font-medium text-primary-dark hover:text-secondary-dark dark:text-ternary-light sm:mx-4 sm:py-2 dark:hover:text-secondary-light"
                         aria-label="Projects">
-                        <Link href="/projects">Projects</Link>
+                        <Link href={"/projects"}>Projects</Link>
                     </div>
                     <div
                         className="mb-2 block text-left text-lg font-medium text-primary-dark hover:text-secondary-dark dark:text-ternary-light sm:mx-4 sm:py-2 dark:hover:text-secondary-light"
                         aria-label="About Me">
-                        <Link href="/about">About Me</Link>
+                        <Link href={"/about"}>About Me</Link>
                     </div>
                     <div
                         className="mb-2 block text-left text-lg font-medium text-primary-dark hover:text-secondary-dark dark:text-ternary-light sm:mx-4 sm:py-2 dark:hover:text-secondary-light"
                         aria-label="Contact">
-                        <Link href="/contact">Contact</Link>
+                        <Link href={"/contact"}>Contact</Link>
                     </div>
                 </div>
 
