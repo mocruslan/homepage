@@ -1,8 +1,18 @@
-import { v4 as uuidv4 } from 'uuid';
+import {v4 as uuidv4} from 'uuid';
+import {Project} from "@/components/projects/data/projectData";
 
-const relatedProjectsData = {
+interface RelatedProjectsData {
+	title: string,
+	projects: {
+		id: string,
+		title: string,
+		img: string,
+	}[],
+}
+
+const relatedProjectsData: RelatedProjectsData = {
 	title: 'Related Projects',
-	Projects: [
+	projects: [
 		{
 			id: uuidv4(),
 			title: 'Mobile UI',
@@ -26,4 +36,5 @@ const relatedProjectsData = {
 	],
 };
 
+export type {RelatedProjectsData};
 export {relatedProjectsData};
