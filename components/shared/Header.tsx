@@ -31,12 +31,7 @@ export default function Header(): React.JSX.Element {
     };
 
     return (
-        <nav
-            // initial={{opacity: 0}}
-            // animate={{opacity: 1}}
-            // id="nav"
-            className="sm:container sm:mx-auto"
-        >
+        <nav className="sm:container sm:mx-auto">
             {/* Header */}
             <div
                 className="z-10 block max-w-screen-lg py-6 sm:flex sm:items-center sm:justify-between xl:max-w-screen-xl">
