@@ -4,7 +4,7 @@ import {Technology} from "./(Info)/Technology";
 import SocialSharing from "./(Info)/SocialSharing";
 import DetailProject from "./(Info)/DetailProject";
 import DetailClient from "./(Info)/DetailClient";
-import {ProjectInfo} from "@/data/projectsData";
+import {ProjectInfo} from "@/components/projects/data/projectData";
 
 export default function Info(props: { projectInfo: ProjectInfo }): React.JSX.Element {
     return (

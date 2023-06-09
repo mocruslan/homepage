@@ -1,13 +1,14 @@
 import {v4 as uuidv4} from 'uuid';
-import {Project} from "@/components/projects/data/projectData";
+
+interface RelatedProject {
+	id: string,
+	title: string,
+	img: string,
+}
 
 interface RelatedProjectsData {
 	title: string,
-	projects: {
-		id: string,
-		title: string,
-		img: string,
-	}[],
+	projects: RelatedProject[],
 }
 
 const relatedProjectsData: RelatedProjectsData = {
@@ -36,5 +37,5 @@ const relatedProjectsData: RelatedProjectsData = {
 	],
 };
 
-export type {RelatedProjectsData};
+export type {RelatedProjectsData, RelatedProject};
 export {relatedProjectsData};

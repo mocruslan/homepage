@@ -273,10 +273,9 @@ const arrProjectData: Project[] = [
     },
 ];
 
-function filterProjectsByURL(url: string): Project | undefined {
+export function filterProjectsByURL(url: string): Project | undefined {
     return arrProjectData.find((project: Project): boolean => project.url === url);
 }
 
 export type {Project, ProjectHeader, ProjectImage, ProjectDetail, ProjectInfo, CompanyInfo};
-export type {filterProjectsByURL};
 export {arrProjectData};

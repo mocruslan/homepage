@@ -4,17 +4,17 @@ import {IconType} from "react-icons";
 const contactData: { id: number, name: string, icon: IconType }[] = [
     {
         id: 1,
-        name: 'Your Address, Your City, Your Country',
+        name: 'Graz, Austria',
         icon: FiMapPin,
     },
     {
         id: 2,
-        name: 'email@domain.com',
+        name: 'business@mochulskyy.com',
         icon: FiMail,
     },
     {
         id: 3,
-        name: '555 8888 888',
+        name: '(+43) 699 81460431',
         icon: FiPhone,
     },
 ];

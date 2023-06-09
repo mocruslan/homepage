@@ -1,7 +1,7 @@
 "use client"
 
 import React, {useRef} from "react";
-import {contactData} from "@/data/contactData";
+import {contactData} from "../(data)/contactData";
 
 export default function ContactDetails(): React.JSX.Element {
     const contactDataRef = useRef(contactData);

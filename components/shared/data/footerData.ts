@@ -6,7 +6,7 @@ interface SocialLink {
     url: string;
 }
 
-const socialLinks: SocialLink[]= [
+const arrSocialLink: SocialLink[] = [
     {
         id: 1,
         icon: FiGlobe,
@@ -29,4 +29,5 @@ const socialLinks: SocialLink[]= [
     },
 ];
 
-export {socialLinks};
+export type {SocialLink};
+export {arrSocialLink};
