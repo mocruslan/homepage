@@ -1,6 +1,6 @@
-import Link from "next/link";
-import {ProjectInfo} from "../../../../../data/projectsData";
 import React from "react";
+import Link from "next/link";
+import {ProjectInfo} from "@/data/projectsData";
 
 export default function SocialSharing(props: { projectInfo: ProjectInfo }): React.JSX.Element {
     return (

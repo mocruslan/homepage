@@ -1,11 +1,11 @@
 "use client"
 
-import {filterProjectsByURL, Project} from '../../../data/projectsData';
+import React, {useRef} from "react";
 import Header from "./(components)/Header";
 import Gallery from "./(components)/Gallery";
-import React, {useRef} from "react";
 import Info from "./(components)/Info";
-import RelatedProjects from "../../../components/projects/RelatedProjects";
+import RelatedProjects from "@/components/projects/RelatedProjects";
+import {filterProjectsByURL, Project} from '@/data/projectsData';
 
 export default function Project({params}): React.JSX.Element {
     const projectRef: React.MutableRefObject<Project> = useRef(filterProjectsByURL(params.id));

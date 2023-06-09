@@ -1,6 +1,6 @@
 import {FiClock, FiTag} from "react-icons/fi";
 import React from "react";
-import {ProjectHeader} from "../../../../data/projectsData";
+import {ProjectHeader} from "@/data/projectsData";
 
 export default function Header(props: { header: ProjectHeader }): React.JSX.Element {
     return (
