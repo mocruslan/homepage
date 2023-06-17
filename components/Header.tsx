@@ -4,9 +4,9 @@ import React, {useState} from 'react';
 import Link from 'next/link';
 import {FiMenu, FiMoon, FiSun, FiX} from 'react-icons/fi';
 import HireMeModal from './HireMeModal';
-import useThemeSwitcher from "../../hooks/useThemeSwitcher";
-import logoLight from '../../public/images/logo-light.svg';
-import logoDark from '../../public/images/logo-dark.svg';
+import useThemeSwitcher from "@/hooks/useThemeSwitcher";
+import logoLight from '../public/images/logo-light.svg';
+import logoDark from '../public/images/logo-dark.svg';
 import Image from "next/image";
 
 

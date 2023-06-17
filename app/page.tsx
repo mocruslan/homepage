@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import HomeBanner from "./HomeBanner";
-import Button from "@/components/shared/Button";
+import Button from "@/components/Button";
 import ProjectsGrid from "@/components/projects/ProjectsGrid";
 
 export default function Home(): React.JSX.Element {
