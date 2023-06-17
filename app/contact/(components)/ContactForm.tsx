@@ -1,8 +1,8 @@
 "use client"
 
 import React from "react";
-import FormInput from "@/components/shared/FormInput";
-import Button from "@/components/shared/Button";
+import FormInput from "@/components/FormInput";
+import Button from "@/components/Button";
 
 export default function ContactForm(): React.JSX.Element {
     return (
