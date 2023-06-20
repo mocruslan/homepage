@@ -7,12 +7,21 @@ import {Project, arrProjectData} from './data/projectData';
 import ProjectsFilter from './ProjectsFilter';
 
 export default function ProjectsGrid(): React.JSX.Element {
-    const [, setSearchProject] = useState<string>();
+    const [searchProject, setSearchProject] = useState<string>();
     const [selectProject, setSelectProject] = useState<string>();
 
-    const selectProjectsByCategory: Project[] = arrProjectData.filter((item: Project) => {
+    const selectProjectsByFilter: Project[] = arrProjectData.filter((item: Project) => {
         let category: string = item.category.charAt(0).toUpperCase() + item.category.slice(1);
-        return category.includes(selectProject || '');
+        let title: string = item.title.toLowerCase();
+
+        if (category.includes(selectProject || '')) {
+            if (searchProject) {
+                console.log(title);
+                return title.includes(searchProject.toString().toLowerCase());
+            }
+            return true;
+        }
+        return false;
     });
 
     return (
@@ -81,13 +90,9 @@ export default function ProjectsGrid(): React.JSX.Element {
 
             <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 sm:gap-5 lg:grid-cols-3">
                 {
-                    selectProject
-                        ? selectProjectsByCategory.map((project: Project, index: number) => {
-                            return <ProjectEntry key={index} project={project}/>;
-                        })
-                        : arrProjectData.map((project: Project, index: number) => (
-                            <ProjectEntry key={index} project={project}/>
-                        ))
+                    selectProjectsByFilter.map((project: Project, index: number) => {
+                        return <ProjectEntry key={index} project={project}/>;
+                    })
                 }
             </div>
         </section>
