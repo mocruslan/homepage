@@ -5,8 +5,8 @@ import Link from 'next/link';
 import {FiMenu, FiMoon, FiSun, FiX} from 'react-icons/fi';
 import HireMeModal from './HireMeModal';
 import useThemeSwitcher from "@/hooks/useThemeSwitcher";
-import logoLight from '../public/images/logo-light.svg';
 import logoDark from '../public/images/logo-dark.svg';
+import logoLight from '../public/images/logo-light.svg';
 import Image from "next/image";
 
 
@@ -42,18 +42,14 @@ export default function Header(): React.JSX.Element {
                             {activeTheme === 'dark' ? (
                                 <Image
                                     src={logoDark}
-                                    className="w-36 cursor-pointer"
+                                    className="w-12 cursor-pointer"
                                     alt="Dark Logo"
-                                    width={150}
-                                    height={120}
                                 />
                             ) : (
                                 <Image
                                     src={logoLight}
-                                    className="w-36 cursor-pointer"
+                                    className="w-12 cursor-pointer"
                                     alt="Dark Logo"
-                                    width={150}
-                                    height={120}
                                 />
                             )}
                         </Link>
