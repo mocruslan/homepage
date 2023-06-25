@@ -8,26 +8,27 @@ interface BioInformation {
 const aboutMeData: BioInformation[] = [
     {
         id: uuidv4(),
-        bio: 'I am a skilled and versatile developer with expertise in web development, Micro Controller' +
-            ' Development, AWS infrastructure design, and E-Commerce logistics software. With a strong ' +
-            'foundation in IT and a drive for continuous improvement, I approach every project with a blend ' +
-            'of technical prowess and a keen eye for detail.',
+        bio: 'Elit reprehenderit voluptate eiusmod ea nisi velit quis. Nostrud exercitation labore laborum excepteur ' +
+            'do do laboris. Culpa cillum ex dolor velit ad duis sunt voluptate minim nostrud. Labore mollit ea ' +
+            'consectetur id. Velit minim ad ea duis est reprehenderit nisi consequat aliquip culpa ex anim ullamco.' +
+            ' Irure labore et irure id in nostrud commodo. Est consequat elit qui amet deserunt id culpa excepteur ' +
+            'voluptate ut pariatur dolor officia. Amet Lorem adipisicing sit dolor sunt duis eiusmod.',
     },
     {
         id: uuidv4(),
-        bio: 'My goal is to create seamless digital experiences that not only meet client objectives but also' +
-            ' exceed user expectations. I thrive on the challenges that come with crafting elegant and user-friendly ' +
-            'solutions, leveraging my knowledge across different domains to deliver results that truly make a' +
-            ' difference. Whether it\'s building responsive websites, optimizing supply chain processes, or ' +
-            'designing scalable systems, I am committed to pushing boundaries and finding innovative ways to ' +
-            'enhance efficiency, functionality, and overall user satisfaction.',
+        bio: 'Et ea consequat ea nisi cupidatat eiusmod esse laboris id eu in. Nulla dolore nostrud consequat. Sit' +
+            ' veniam quis quis eu excepteur consequat occaecat aliqua officia quis. Aute voluptate nisi culpa commodo ' +
+            'culpa velit incididunt qui esse velit mollit do. Sit amet veniam laboris. Sit sunt et ipsum nulla nulla' +
+            ' fugiat amet irure aute dolor sint occaecat mollit non. Fugiat culpa ex reprehenderit est. Et ullamco' +
+            ' eiusmod reprehenderit adipisicing pariatur culpa cillum est ut exercitation enim aliqua officia amet' +
+            ' mollit.',
     },
     {
         id: uuidv4(),
-        bio: 'I am always seeking opportunities to further expand my skill set and explore emerging trends and ' +
-            'advancements in the field. Let\'s collaborate to transform your ideas into reality, leveraging the ' +
-            'power of technology to create remarkable outcomes that leave a lasting impact. Together, we can ' +
-            'build a future where innovation and excellence thrive.',
+        bio: 'Tempor adipisicing quis velit ut esse commodo velit dolor sit proident. Sint culpa voluptate' +
+            ' laboris irure commodo aute laborum nisi tempor esse. Occaecat do velit proident minim consectetur' +
+            ' laborum nostrud dolore magna ullamco Lorem. Elit do eiusmod velit qui tempor Lorem. Ullamco irure' +
+            ' eiusmod minim eu occaecat incididunt.',
     },
 ];
 

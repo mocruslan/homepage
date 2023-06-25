@@ -4,6 +4,7 @@ import React from "react";
 import Image from "next/image";
 import {FiArrowDownCircle} from 'react-icons/fi';
 import useThemeSwitcher from '@/hooks/useThemeSwitcher';
+import Typewriter from 'typewriter-effect';
 
 export default function HomeBanner(): React.JSX.Element {
     const [activeTheme] = useThemeSwitcher();
@@ -18,11 +19,27 @@ export default function HomeBanner(): React.JSX.Element {
                 >
                     Hi, Iam Ruslan
                 </h1>
-                <p
-                    className={"font-general-medium mt-4 text-lg md:text-xl lg:text-2xl xl:text-3xl text-center sm:text-left leading-normal text-gray-500 dark:text-gray-200"}
-                >
-                    A Software Developer with a passion for building
-                </p>
+                <div
+                    className={"font-general-medium mt-4 text-lg md:text-xl lg:text-2xl xl:text-3xl text-center sm:text-left leading-normal text-gray-500 dark:text-gray-200"}>
+                    <Typewriter
+                        onInit={(typewriter) => {
+                            typewriter
+                                .typeString('A Fullstack Developer')
+                                .pauseFor(1500)
+                                .deleteAll()
+                                .typeString('A Photographer')
+                                .pauseFor(1500)
+                                .deleteAll()
+                                .typeString('A Dog owner')
+                                .pauseFor(1500)
+                                .start();
+                        }}
+
+                        options={{
+                            loop: true,
+                        }}
+                    />
+                </div>
                 <div
                     className={"flex justify-center sm:block"}
                 >
@@ -43,8 +60,7 @@ export default function HomeBanner(): React.JSX.Element {
             <div
                 className={"w-full sm:w-2/3 text-right float-right mt-8 sm:mt-0"}
             >
-                <Image
-                    src={
+                <Image src={
                         activeTheme === 'dark'
                             ? '/images/developer.svg'
                             : '/images/developer-dark.svg'

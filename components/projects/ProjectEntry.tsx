@@ -4,10 +4,14 @@ import React from "react";
 import Link from 'next/link';
 import Image from 'next/image';
 import {Project} from "@/components/projects/data/projectData";
+import {motion} from "framer-motion";
 
 export default function ProjectEntry(props: { project: Project }): React.JSX.Element {
     return (
-        <div>
+        <motion.div
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 1.0 }}
+        >
             <Link
                 href={`/projects/${props.project.url}`}
             >
@@ -32,6 +36,6 @@ export default function ProjectEntry(props: { project: Project }): React.JSX.Ele
                     </div>
                 </div>
             </Link>
-        </div>
+        </motion.div>
     );
 };
