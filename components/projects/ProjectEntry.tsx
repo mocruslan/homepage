@@ -4,14 +4,11 @@ import React from "react";
 import Link from 'next/link';
 import Image from 'next/image';
 import {Project} from "@/components/projects/data/projectData";
-import {motion} from "framer-motion";
+import CardHoverEffect from "@/components/animation/CardHoverEffect";
 
 export default function ProjectEntry(props: { project: Project }): React.JSX.Element {
     return (
-        <motion.div
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 1.0 }}
-        >
+        <CardHoverEffect>
             <Link
                 href={`/projects/${props.project.url}`}
             >
@@ -36,6 +33,6 @@ export default function ProjectEntry(props: { project: Project }): React.JSX.Ele
                     </div>
                 </div>
             </Link>
-        </motion.div>
+        </CardHoverEffect>
     );
 };

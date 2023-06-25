@@ -3,7 +3,6 @@ import Link from "next/link";
 import HomeBanner from "./HomeBanner";
 import Button from "@/components/Button";
 import ProjectsGrid from "@/components/projects/ProjectsGrid";
-import {motion} from "framer-motion";
 import PageTransition from "@/components/animation/PageTransition";
 
 export default function Home(): React.JSX.Element {
