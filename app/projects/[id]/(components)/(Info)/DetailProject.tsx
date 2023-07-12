@@ -1,8 +1,5 @@
 import React from "react";
-import {
-  ProjectDetail,
-  ProjectInfo,
-} from "@/components/projects/data/projectData";
+import {ProjectDetail, ProjectInfo,} from "@/components/projects/data/projectData";
 
 export default function DetailProject(props: {
   projectInfo: ProjectInfo;

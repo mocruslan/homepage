@@ -1,7 +1,7 @@
 "use client";
 
-import { motion } from "framer-motion";
-import { ScriptProps } from "next/script";
+import {motion} from "framer-motion";
+import {ScriptProps} from "next/script";
 
 const variants = {
   hover: { scale: 1.1 },

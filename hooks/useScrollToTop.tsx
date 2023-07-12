@@ -1,7 +1,7 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
-import { FiChevronUp } from "react-icons/fi";
+import React, {useEffect, useState} from "react";
+import {FiChevronUp} from "react-icons/fi";
 
 const useScrollToTop = () => {
   const [showScroll, setShowScroll] = useState(false);

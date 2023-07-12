@@ -3,7 +3,7 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { Project } from "@/components/projects/data/projectData";
+import {Project} from "@/components/projects/data/projectData";
 import CardHoverEffect from "@/components/animation/CardHoverEffect";
 
 export default function ProjectEntry(props: {

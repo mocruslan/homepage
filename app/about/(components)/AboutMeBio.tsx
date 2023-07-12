@@ -1,8 +1,8 @@
 "use client";
 
-import React, { useRef } from "react";
+import React, {useRef} from "react";
 import Image from "next/image";
-import { aboutMeData } from "../(data)/aboutMeData";
+import {aboutMeData} from "../(data)/aboutMeData";
 
 export default function AboutMeBio(): React.JSX.Element {
   const aboutMeDataRef = useRef(aboutMeData);

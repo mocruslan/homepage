@@ -1,7 +1,7 @@
 "use client";
 
-import { motion } from "framer-motion";
-import { ScriptProps } from "next/script";
+import {motion} from "framer-motion";
+import {ScriptProps} from "next/script";
 
 const variants = {
   hidden: { opacity: 0, x: -200, y: 0 },

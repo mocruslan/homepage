@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
+import React, {useEffect, useState} from "react";
 
 const useThemeSwitcher = (): [string, (theme: string) => void] => {
   const [theme, setTheme] = useState(

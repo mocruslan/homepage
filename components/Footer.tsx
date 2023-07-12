@@ -1,8 +1,8 @@
 "use client";
 
 import FooterCopyright from "./FooterCopyright";
-import React, { useRef } from "react";
-import { arrSocialLink } from "./data/footerData";
+import React, {useRef} from "react";
+import {arrSocialLink} from "./data/footerData";
 
 export default function Footer(): React.JSX.Element {
   const linksRef = useRef(arrSocialLink);

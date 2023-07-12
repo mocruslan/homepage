@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import { ProjectInfo } from "@/components/projects/data/projectData";
+import {ProjectInfo} from "@/components/projects/data/projectData";
 
 export default function SocialSharing(props: {
   projectInfo: ProjectInfo;

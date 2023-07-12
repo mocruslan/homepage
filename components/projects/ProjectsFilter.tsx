@@ -1,7 +1,7 @@
 "use client";
 
-import React, { useRef } from "react";
-import { arrBrandingOptionData } from "@/components/projects/data/brandingData";
+import React, {useRef} from "react";
+import {arrBrandingOptionData} from "@/components/projects/data/brandingData";
 
 interface ProjectsFilterProps {
   setSelectProject: (value: string) => void;

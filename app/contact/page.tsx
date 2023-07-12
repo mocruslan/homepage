@@ -7,7 +7,7 @@ export default function Contact(): React.JSX.Element {
     return (
         <PageTransition>
             <main>
-                <div className="container mx-auto flex flex-col-reverse lg:flex-row py-5 lg:py-10 lg:mt-5">
+                <div className="container mx-auto flex flex-col-reverse py-5 lg:mt-5 lg:flex-row lg:py-10">
                     <ContactForm/>
 
                     <ContactDetails/>

@@ -1,10 +1,10 @@
 import React from "react";
 import Objective from "./(Info)/Objective";
-import { Technology } from "./(Info)/Technology";
+import {Technology} from "./(Info)/Technology";
 import SocialSharing from "./(Info)/SocialSharing";
 import DetailProject from "./(Info)/DetailProject";
 import DetailClient from "./(Info)/DetailClient";
-import { ProjectInfo } from "@/components/projects/data/projectData";
+import {ProjectInfo} from "@/components/projects/data/projectData";
 
 export default function Info(props: {
   projectInfo: ProjectInfo;

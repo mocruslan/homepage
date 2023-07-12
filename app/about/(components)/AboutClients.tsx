@@ -1,11 +1,7 @@
 "use client";
 
-import React, { useRef } from "react";
-import {
-  ClientInformation,
-  clientsData,
-  clientsHeading,
-} from "../(data)/clientsData";
+import React, {useRef} from "react";
+import {ClientInformation, clientsData, clientsHeading,} from "../(data)/clientsData";
 import AboutClientSingle from "./AboutClientSingle";
 
 export default function AboutClients(): React.JSX.Element {

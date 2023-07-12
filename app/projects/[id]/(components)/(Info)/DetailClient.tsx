@@ -1,8 +1,5 @@
 import React from "react";
-import {
-  CompanyInfo,
-  ProjectInfo,
-} from "@/components/projects/data/projectData";
+import {CompanyInfo, ProjectInfo,} from "@/components/projects/data/projectData";
 
 export default function DetailClient(props: {
   projectInfo: ProjectInfo;

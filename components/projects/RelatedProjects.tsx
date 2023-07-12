@@ -1,11 +1,8 @@
 "use client";
 
 import Image from "next/image";
-import {
-  RelatedProject,
-  relatedProjectsData,
-} from "./data/relatedProjectsData";
-import React, { useRef } from "react";
+import {RelatedProject, relatedProjectsData,} from "./data/relatedProjectsData";
+import React, {useRef} from "react";
 
 export default function RelatedProjects(): React.JSX.Element {
   const relatedProjectsDataRef = useRef(relatedProjectsData);

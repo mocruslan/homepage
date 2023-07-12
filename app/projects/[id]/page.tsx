@@ -1,14 +1,11 @@
 "use client";
 
-import React, { useRef } from "react";
+import React, {useRef} from "react";
 import Header from "./(components)/Header";
 import Gallery from "./(components)/Gallery";
 import Info from "./(components)/Info";
 import RelatedProjects from "@/components/projects/RelatedProjects";
-import {
-  filterProjectsByURL,
-  Project,
-} from "@/components/projects/data/projectData";
+import {filterProjectsByURL, Project,} from "@/components/projects/data/projectData";
 import PageTransition from "@/components/animation/PageTransition";
 
 export default function Project({ params }): React.JSX.Element {

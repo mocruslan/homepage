@@ -1,6 +1,6 @@
-import { FiClock, FiTag } from "react-icons/fi";
+import {FiClock, FiTag} from "react-icons/fi";
 import React from "react";
-import { ProjectHeader } from "@/components/projects/data/projectData";
+import {ProjectHeader} from "@/components/projects/data/projectData";
 
 export default function Header(props: {
   header: ProjectHeader;

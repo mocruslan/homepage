@@ -1,8 +1,8 @@
 "use client";
 
-import React, { useState } from "react";
+import React, {useState} from "react";
 import Link from "next/link";
-import { FiMenu, FiMoon, FiSun, FiX } from "react-icons/fi";
+import {FiMenu, FiMoon, FiSun, FiX} from "react-icons/fi";
 import HireMeModal from "./HireMeModal";
 import useThemeSwitcher from "@/hooks/useThemeSwitcher";
 import logoDark from "../public/images/logo-dark.svg";

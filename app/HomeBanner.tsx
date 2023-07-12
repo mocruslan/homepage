@@ -2,7 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
-import { FiArrowDownCircle } from "react-icons/fi";
+import {FiArrowDownCircle} from "react-icons/fi";
 import useThemeSwitcher from "@/hooks/useThemeSwitcher";
 import Typewriter from "typewriter-effect";
 

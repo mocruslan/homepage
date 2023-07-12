@@ -1,9 +1,9 @@
 "use client";
 
-import React, { useState } from "react";
-import { FiSearch } from "react-icons/fi";
+import React, {useState} from "react";
+import {FiSearch} from "react-icons/fi";
 import ProjectEntry from "./ProjectEntry";
-import { arrProjectData, Project } from "./data/projectData";
+import {arrProjectData, Project} from "./data/projectData";
 import ProjectsFilter from "./ProjectsFilter";
 
 export default function ProjectsGrid(): React.JSX.Element {

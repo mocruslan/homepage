@@ -1,5 +1,5 @@
-import { FiMail, FiMapPin, FiPhone } from "react-icons/fi";
-import { IconType } from "react-icons";
+import {FiMail, FiMapPin, FiPhone} from "react-icons/fi";
+import {IconType} from "react-icons";
 
 const contactData: { id: number; name: string; icon: IconType }[] = [
   {

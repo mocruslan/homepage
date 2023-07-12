@@ -1,5 +1,5 @@
 import React from "react";
-import { ProjectInfo } from "@/components/projects/data/projectData";
+import {ProjectInfo} from "@/components/projects/data/projectData";
 
 export function Technology(props: {
   projectInfo: ProjectInfo;
