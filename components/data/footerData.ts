@@ -1,9 +1,9 @@
-import {FiGithub, FiGlobe, FiLinkedin, FiTwitter} from 'react-icons/fi';
+import { FiGithub, FiGlobe, FiLinkedin, FiTwitter } from "react-icons/fi";
 
 interface SocialLink {
-    id: number;
-    icon: any;
-    url: string;
+  id: number;
+  icon: any;
+  url: string;
 }
 
 const arrSocialLink: SocialLink[] = [

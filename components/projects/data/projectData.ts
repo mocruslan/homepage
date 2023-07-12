@@ -1,16 +1,16 @@
-import {v4 as uuidv4} from 'uuid';
-import {IconType} from "react-icons";
-import {FiLinkedin, FiTwitter,} from 'react-icons/fi';
+import { v4 as uuidv4 } from "uuid";
+import { IconType } from "react-icons";
+import { FiLinkedin, FiTwitter } from "react-icons/fi";
 
 interface ProjectDetail {
-    id: string;
-    details: string;
+  id: string;
+  details: string;
 }
 
 interface ProjectImage {
-    id: string;
-    title: string;
-    img: string;
+  id: string;
+  title: string;
+  img: string;
 }
 
 interface CompanyInfo {

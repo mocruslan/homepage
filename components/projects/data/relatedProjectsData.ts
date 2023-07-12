@@ -1,9 +1,9 @@
-import {v4 as uuidv4} from 'uuid';
+import { v4 as uuidv4 } from "uuid";
 
 interface RelatedProject {
-	id: string,
-	title: string,
-	img: string,
+  id: string;
+  title: string;
+  img: string;
 }
 
 interface RelatedProjectsData {
